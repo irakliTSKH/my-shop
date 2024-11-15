@@ -48,5 +48,4 @@ export class DataTableComponent implements OnInit {
       this.dataSource.paginator.firstPage();
     }
   }
-
 }
