@@ -25,12 +25,36 @@
       "date": "2024-11-03T20:00:00.000Z"
     },
     {
-      "id": 32,
+      "id": "32",
       "brand": "NGK",
       "name": "23f",
       "price": 23,
       "quantity": 23,
       "date": "2024-11-15T20:00:00.000Z"
+    },
+    {
+      "id": "3",
+      "brand": "NGK",
+      "name": "iiraaa",
+      "price": 3,
+      "quantity": "",
+      "date": ""
+    },
+    {
+      "id": "",
+      "brand": "",
+      "name": "",
+      "price": "",
+      "quantity": "",
+      "date": ""
+    },
+    {
+      "id": 234,
+      "brand": "NGK",
+      "name": "",
+      "price": 21,
+      "quantity": "",
+      "date": ""
     }
   ]
 }

@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { MatToolbarModule } from '@angular/material/toolbar';
-import { AddItemComponent } from '../add-item/add-item.component';
+import { AddItemComponent } from './add-item/add-item/add-item.component';
 import {MatButtonModule} from '@angular/material/button';
 
 @Component({
