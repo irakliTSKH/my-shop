@@ -7,8 +7,8 @@ import { MatSelectModule } from '@angular/material/select';
 import { FormBuilder, FormGroup, ReactiveFormsModule } from '@angular/forms';
 import {MatButtonModule} from '@angular/material/button';
 import { DialogRef } from '@angular/cdk/dialog';
-import { AddItemService } from '../../services/add-item.service';
-import { ISparkPlug } from '../../interface/sparkPlugs.interface';
+import { AddItemService } from '../../../../../../services/add-item.service';
+import { ISparkPlug } from '../../../../../../interface/sparkPlugs.interface';
 
 
 @Component({
