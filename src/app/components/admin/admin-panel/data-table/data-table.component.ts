@@ -1,6 +1,6 @@
 import { Component, inject, OnInit, ViewChild } from '@angular/core';
-import { SparkPlugsService } from '../../services/spark-plugs.service';
-import { ISparkPlug } from '../../interface/sparkPlugs.interface';
+import { SparkPlugsService } from '../../../../services/spark-plugs.service';
+import { ISparkPlug } from '../../../../interface/sparkPlugs.interface';
 import {MatTableModule, MatTableDataSource} from '@angular/material/table';
 import {MatPaginator, MatPaginatorModule} from '@angular/material/paginator';
 import {MatSort, MatSortModule} from '@angular/material/sort';
@@ -13,7 +13,7 @@ import { CommonModule } from '@angular/common';
   standalone: true,
   imports: [MatTableModule, MatSortModule, MatPaginatorModule, MatFormFieldModule, MatInputModule, CommonModule],
   templateUrl: './data-table.component.html',
-  styleUrl: './data-table.component.scss'
+  styleUrl: './data-table.component.scss',
 })
 export class DataTableComponent implements OnInit {
 
@@ -24,22 +24,19 @@ export class DataTableComponent implements OnInit {
 
   displayedColumns: string[] = ['id', 'name', 'brand', 'quantity', 'price', 'date'];
   dataSource!: MatTableDataSource<any>;
-  
+  data!: ISparkPlug[]
+
   ngOnInit(): void {
    this.getSparkPlugs()
   }
-
+  
   getSparkPlugs(){
-    this.sparkPlugsService.getDataSp().subscribe({
-      next: (Response: ISparkPlug[]) => {
-        this.dataSource = new MatTableDataSource(Response)
-        this.dataSource.sort = this. sort
-        this.dataSource.paginator = this.paginator
-      }
-    })
+    this.data = this.sparkPlugsService.getSparkPlugsData()
+    this.dataSource = new MatTableDataSource(this.data)
+    this.dataSource.sort = this.sort
+    this.dataSource.paginator = this.paginator
   }
-
-
+  
   applyFilter(event: Event) {
     const filterValue = (event.target as HTMLInputElement).value;
     this.dataSource.filter = filterValue.trim().toLowerCase();
@@ -49,3 +46,4 @@ export class DataTableComponent implements OnInit {
     }
   }
 }
+

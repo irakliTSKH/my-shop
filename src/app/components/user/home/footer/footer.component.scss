@@ -1,0 +1,9 @@
+@import '../../../../share/variables';
+
+.main{
+    background-color: $color-primary;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    color: $color-secondary;
+}

@@ -1,36 +1,12 @@
 {
   "sparkPlugsData": [
     {
-      "id": "4122",
+      "id": 4444,
       "brand": "NGK",
-      "name": "asdsfad",
-      "price": 12,
-      "quantity": 44,
-      "date": "2024-11-11T20:00:00.000Z"
-    },
-    {
-      "id": "123",
-      "brand": "NGK",
-      "name": "asdasd",
-      "price": 21312,
-      "quantity": 412,
-      "date": "2024-11-10T20:00:00.000Z"
-    },
-    {
-      "id": "44",
-      "brand": "NGK",
-      "name": "44\\X\\",
-      "price": 44,
-      "quantity": 44,
-      "date": "2024-11-03T20:00:00.000Z"
-    },
-    {
-      "id": 32,
-      "brand": "NGK",
-      "name": "23f",
-      "price": 23,
-      "quantity": 23,
-      "date": "2024-11-15T20:00:00.000Z"
+      "name": "LKR7AIX",
+      "price": 35,
+      "quantity": 1,
+      "date": "2024-11-28T20:00:00.000Z"
     }
   ]
 }

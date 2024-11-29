@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
-import { Injectable } from '@angular/core';
+import { Injectable, signal } from '@angular/core';
 import { Observable } from 'rxjs';
+import { ISparkPlug } from '../interface/sparkPlugs.interface';
 
 @Injectable({
   providedIn: 'root'
@@ -9,9 +10,18 @@ export class SparkPlugsService {
 
   constructor(private http: HttpClient) { }
 
-  getDataSp(): Observable<any>{
-    return this.http.get('http://localhost:3000/sparkPlugsData')
+  private sparkPlugsDataSignal  = signal<ISparkPlug[]>([]);
+
+  get getSparkPlugsData() {
+    return this.sparkPlugsDataSignal;
   }
-  
+
+  setSparkPlugsData(data: ISparkPlug[]) {
+    this.sparkPlugsDataSignal.set(data);
+  }
+
+  getDataService(): Observable<ISparkPlug[]>{
+    return this.http.get<ISparkPlug[]>('http://localhost:3000/sparkPlugsData')
+  }
 }
  
