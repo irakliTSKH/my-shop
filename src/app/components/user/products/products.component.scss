@@ -1,4 +1,4 @@
-@import '../../../../share/variables';
+@import '../../../share/variables';
 
 table {
     font-family: arial, sans-serif;
@@ -19,4 +19,5 @@ table {
   .table{
     display: flex;
     justify-content: center;
+    align-items: center;
   }

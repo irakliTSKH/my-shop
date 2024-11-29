@@ -7,6 +7,22 @@
       "price": 35,
       "quantity": 1,
       "date": "2024-11-28T20:00:00.000Z"
+    },
+    {
+      "id": 5123,
+      "brand": "Denso",
+      "name": "IK20",
+      "price": 32,
+      "quantity": 5,
+      "date": "2024-11-28T20:00:00.000Z"
+    },
+    {
+      "id": 5123,
+      "brand": "MotorCraft",
+      "name": "SP530",
+      "price": 51,
+      "quantity": 31,
+      "date": "2024-11-26T20:00:00.000Z"
     }
   ]
 }
