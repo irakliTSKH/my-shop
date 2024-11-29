@@ -1,5 +1,4 @@
-
-
+@import '../../../../share/variables';
 
 table {
     font-family: arial, sans-serif;
@@ -8,13 +7,13 @@ table {
   }
   
   td, th {
-    border: 1px solid #dddddd;
+    border: 1px solid $color-primary;
     text-align: left;
     padding: 8px;
   }
   
   tr:nth-child(even) {
-    background-color: #dddddd;
+    background-color: $color-primary;
   }
 
   .table{
