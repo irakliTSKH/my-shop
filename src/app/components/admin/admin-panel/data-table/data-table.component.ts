@@ -1,4 +1,4 @@
-import { Component, effect, inject, OnInit, ViewChild } from '@angular/core';
+import { Component, inject, OnInit, ViewChild } from '@angular/core';
 import { SparkPlugsService } from '../../../../services/spark-plugs.service';
 import { ISparkPlug } from '../../../../interface/sparkPlugs.interface';
 import {MatTableModule, MatTableDataSource} from '@angular/material/table';
@@ -13,7 +13,7 @@ import { CommonModule } from '@angular/common';
   standalone: true,
   imports: [MatTableModule, MatSortModule, MatPaginatorModule, MatFormFieldModule, MatInputModule, CommonModule],
   templateUrl: './data-table.component.html',
-  styleUrl: './data-table.component.scss'
+  styleUrl: './data-table.component.scss',
 })
 export class DataTableComponent implements OnInit {
 

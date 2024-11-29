@@ -2,7 +2,6 @@
 .main{
     display: flex;
     flex-direction: column;
-    app-home-main{
-        width: 100%;
-    }
+    justify-content: space-between;
+    height: 100%;
 }
