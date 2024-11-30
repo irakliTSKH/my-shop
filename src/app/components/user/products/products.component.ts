@@ -1,16 +1,16 @@
 import { Component } from '@angular/core';
-import { SparkPlugsService } from '../../../../services/spark-plugs.service';
-import { ISparkPlug } from '../../../../interface/sparkPlugs.interface';
+import { SparkPlugsService } from '../../../services/spark-plugs.service';
+import { ISparkPlug } from '../../../interface/sparkPlugs.interface';
 import { CommonModule } from '@angular/common';
 
 @Component({
-  selector: 'app-home-main',
+  selector: 'app-products',
   standalone: true,
-  imports: [CommonModule ],
-  templateUrl: './home-main.component.html',
-  styleUrl: './home-main.component.scss'
+  imports: [CommonModule],
+  templateUrl: './products.component.html',
+  styleUrl: './products.component.scss'
 })
-export class HomeMainComponent {
+export class ProductsComponent {
 
   constructor(private sparkPlugsService: SparkPlugsService){ }
 

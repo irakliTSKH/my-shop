@@ -1,4 +1,4 @@
-@import '../../../../share/variables';
+@import '../../../share/variables';
 
 .main {
     background-color: $color-primary;
@@ -14,11 +14,13 @@
     .links{
         ul {
             display: flex;
-        gap: 50px;
-        li{
-            color: $color-secondary;
-            cursor: pointer;
-        }
+              gap: 50px;
+              li{
+                  a{
+                      color: $color-secondary;
+                      cursor: pointer;
+                  }
+              }
     }
 }
 }
