@@ -1,5 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
-
+@import '../src/app/share/variables';
 * {
   padding: 0;
   box-sizing: border-box;
@@ -10,7 +10,7 @@ body {
 }
 body {
   margin: 0;
-  font-family: "Times New Roman", Times, serif;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
 
 ul {
@@ -22,3 +22,12 @@ ul {
 a {
   text-decoration: none;
 }
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+
+
+
+
