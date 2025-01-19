@@ -1,0 +1,15 @@
+@import '../../../share/variables';
+
+.main{
+    background-color: $color-primary;
+    padding: 20px;
+    .contact{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: $color-secondary;
+        h3, p {
+            margin: 5px;
+        }
+    }
+}

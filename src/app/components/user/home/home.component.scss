@@ -1,7 +1,9 @@
+@import '../../../share/variables';
 
 .main{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
+    color: $color-primary;
+    background-image: url('/Blo.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
 }

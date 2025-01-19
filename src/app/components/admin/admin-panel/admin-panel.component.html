@@ -1,4 +1,11 @@
-<div class="main">
-    <app-tool-bar></app-tool-bar>
-    <app-data-table></app-data-table>
-</div>
+
+@if(!admin){
+    <div class="admin-password">
+        <input type="text">
+    </div>
+}@else{
+    <div class="main">
+        <app-tool-bar></app-tool-bar>
+        <app-data-table></app-data-table>
+    </div>
+}

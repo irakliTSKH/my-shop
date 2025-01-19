@@ -11,4 +11,6 @@ import { DataTableComponent } from "./data-table/data-table.component";
 })
 export class AdminPanelComponent {
 
+  admin = false
+
 }
