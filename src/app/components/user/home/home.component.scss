@@ -1,4 +1,9 @@
 @import '../../../share/variables';
+
 .main{
     color: $color-primary;
+    background-image: url('/Blo.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
 }

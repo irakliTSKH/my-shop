@@ -7,6 +7,5 @@ import { MainComponent } from './components/user/main/main.component';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent {
-
+export class AppComponent  {
 }
