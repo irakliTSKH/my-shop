@@ -1,10 +1,10 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { interval, Subscription } from 'rxjs';
-
+import { GridHomeComponent } from "./grid-home/grid-home.component";
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [],
+  imports: [GridHomeComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })
@@ -16,6 +16,7 @@ export class HomeComponent implements OnInit, OnDestroy {
     '/66.jfif',
     '/77.webp'
   ]
+  
   currentImage!: string;
   private currentIndex = 0;
   formSubscription!: Subscription;
