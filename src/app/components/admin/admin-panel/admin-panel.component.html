@@ -1,11 +1,17 @@
 
 @if(!admin){
-    <div class="admin-password">
-        <input type="text">
+    <div class="admin-login">
+        <label for="name">Name</label>
+        <input type="text" id="name">
+
+        <label for="password">Password</label>
+        <input type="password" id="password">
+        <button type="submit">Login</button>
+
     </div>
 }@else{
-    <div class="main">
-        <app-tool-bar></app-tool-bar>
-        <app-data-table></app-data-table>
+    <div class="admin-panel">
+        <app-tool-bar/>
+        <app-data-table/>
     </div>
 }
