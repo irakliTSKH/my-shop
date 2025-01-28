@@ -22,6 +22,7 @@
                     color: $color-primary;
                     cursor: pointer;
                     padding-bottom: 5px;
+                    transition: all 1s;
                     &:hover{
                         color: $color-third;
                         border-bottom: 2px solid $color-third;

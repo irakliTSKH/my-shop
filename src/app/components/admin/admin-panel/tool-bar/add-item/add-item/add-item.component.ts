@@ -10,7 +10,6 @@ import { DialogRef } from '@angular/cdk/dialog';
 import { AddItemService } from '../../../../../../services/add-item.service';
 import { ISparkPlug } from '../../../../../../interface/sparkPlugs.interface';
 
-
 @Component({
   selector: 'app-add-item',
   standalone: true,
