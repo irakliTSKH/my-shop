@@ -40,5 +40,16 @@
       "quantity": 4,
       "date": "2025-01-13T20:00:00.000Z"
     }
+  ],
+
+  "adminArray": [
+    {
+      "name": "admin",
+      "password": "admin1"
+    },
+    {
+      "name": "admin2",
+      "password": "admin2"
+    }
   ]
 }

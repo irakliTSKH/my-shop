@@ -16,6 +16,13 @@ export class GridHomeComponent {
       this.dialog.open(GridItemComponent, {
         height: '80vh',
         width: '70vw',
+        // data: {
+        //   title: 'asd',
+        //   content: 'asd',
+        // },
+
+      //fix ირაკლი
+  
       });
     }
 }

@@ -1,14 +1,17 @@
-
 @if(!admin){
-    <div class="admin-login">
+    <form class="admin-login" [formGroup]='myForm'  (ngSubmit)="onSubmit()"  >
         <label for="name">Name</label>
-        <input type="text" id="name">
+        <input type="text" id="name" formControlName="name">
 
         <label for="password">Password</label>
-        <input type="password" id="password">
-        <button type="submit">Login</button>
-
-    </div>
+        <input type="password" id="password" formControlName="password">
+        <div class="login-button">
+            @if(loginError){
+                <p class="erro">erro</p>
+            }
+            <button type="submit">Login</button>
+        </div>
+    </form>
 }@else{
     <div class="admin-panel">
         <app-tool-bar/>
