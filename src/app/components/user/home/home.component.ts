@@ -1,5 +1,5 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
-import { interval, Subscription } from 'rxjs';
+import { interval, Subject, takeUntil } from 'rxjs';
 import { GridHomeComponent } from "./grid-home/grid-home.component";
 import { FooterComponent } from "../footer/footer.component";
 @Component({
@@ -20,7 +20,7 @@ export class HomeComponent implements OnInit, OnDestroy {
   
   currentImage!: string;
   private currentIndex = 0;
-  formSubscription!: Subscription;
+  private destroy$ = new Subject<void>();
 
   ngOnInit(): void {
     this.currentImage = this.sliderArr[this.currentIndex];
@@ -43,15 +43,15 @@ export class HomeComponent implements OnInit, OnDestroy {
 
   startImageSlider() {
     const imageInterval = interval(5000);
-      this.formSubscription = imageInterval.subscribe(() => {
+      imageInterval
+      .pipe(takeUntil(this.destroy$))
+      .subscribe(() => {
         this.changeNextCurrentImage();
       });
   }
 
-  // FIXTHIS ანსაბსქრაიბი სხვანაირად უნდა გავაკეთო
   ngOnDestroy(): void {
-    if (this.formSubscription) {
-      this.formSubscription.unsubscribe();
-    }
+    this.destroy$.next();
+    this.destroy$.complete();
   }
 }
