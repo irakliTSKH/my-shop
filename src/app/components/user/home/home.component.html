@@ -1,2 +1,14 @@
-<div class="main">
+  
+<div class="main" >
+    <button (click)="changePrevCurrentImage()"><</button>
+    <img [src]="currentImage" alt="sliderLogo">
+    <button (click)="changeNextCurrentImage()">></button>
 </div>
+
+<div class="banner">
+    <img src="/logoDrivex.svg" alt="logo">
+</div>
+
+<app-grid-home/>
+
+<app-footer/>

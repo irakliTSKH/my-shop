@@ -1,9 +1,42 @@
 @import '../../../share/variables';
 
 .main{
-    color: $color-primary;
-    background-image: url('/Blo.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 100vh;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img{
+        height: 100%;
+    }
+    
+    button{
+        border: none;
+        position: absolute;
+        font-size: 50px;
+        color: $color-primary;
+        background-color: transparent;
+        cursor: pointer;
+        &:hover {
+            color: $color-third;
+        }
+        &:first-of-type {
+            left: 10vw;
+        }
+        &:last-of-type{
+            right: 10vw;
+        }
+    }
+}
+
+.banner{
+    background-color: $color-third;
+    height: 40vh;
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    img{
+        height: 100%;
+    }
 }

@@ -25,12 +25,31 @@
       "date": "2024-11-26T20:00:00.000Z"
     },
     {
-      "id": 5123,
+      "id": "5123",
       "brand": "Denso",
       "name": "sk20br",
       "price": 32,
       "quantity": 4,
       "date": "2025-01-01T20:00:00.000Z"
+    },
+    {
+      "id": 4131,
+      "brand": "Denso",
+      "name": "dex123",
+      "price": 12,
+      "quantity": 4,
+      "date": "2025-01-13T20:00:00.000Z"
+    }
+  ],
+
+  "adminArray": [
+    {
+      "name": "admin",
+      "password": "admin1"
+    },
+    {
+      "name": "admin2",
+      "password": "admin2"
     }
   ]
 }
