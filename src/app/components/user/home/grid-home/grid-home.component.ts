@@ -11,18 +11,18 @@ import { MatDialog } from '@angular/material/dialog';
 })
 export class GridHomeComponent {
    constructor(private dialog: MatDialog) {}
+
+   titleArray = [ 'one', 'two', 'three']
+
   
     openGridItem() {
       this.dialog.open(GridItemComponent, {
         height: '80vh',
         width: '70vw',
-        // data: {
-        //   title: 'asd',
-        //   content: 'asd',
-        // },
-
-      //fix ირაკლი
-  
+        data: {
+          title: 'dynamic title',
+          content: 'This is the content of the dialog.'
+        }
       });
     }
 }
