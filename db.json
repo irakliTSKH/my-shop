@@ -9,8 +9,24 @@
       "date": "2024-11-28T20:00:00.000Z"
     },
     {
+      "id": "1231",
+      "brand": "NGK",
+      "name": "LFR6CGP",
+      "price": 35,
+      "quantity": 1,
+      "date": "2024-11-28T20:00:00.000Z"
+    },
+    {
+      "id": "312",
+      "brand": "NGK",
+      "name": "BKR6",
+      "price": 35,
+      "quantity": 1,
+      "date": "2024-11-28T20:00:00.000Z"
+    },
+    {
       "id": "5123",
-      "brand": "Denso",
+      "brand": "DENSO",
       "name": "IK20",
       "price": 32,
       "quantity": 5,
@@ -18,7 +34,7 @@
     },
     {
       "id": "5123",
-      "brand": "MotorCraft",
+      "brand": "MOTORCRAFT",
       "name": "SP530",
       "price": 51,
       "quantity": 31,
@@ -26,22 +42,37 @@
     },
     {
       "id": "5123",
-      "brand": "Denso",
+      "brand": "DENSO",
       "name": "sk20br",
       "price": 32,
       "quantity": 4,
       "date": "2025-01-01T20:00:00.000Z"
     },
     {
-      "id": 4131,
-      "brand": "Denso",
+      "id": "4131",
+      "brand": "DENSO",
       "name": "dex123",
       "price": 12,
       "quantity": 4,
       "date": "2025-01-13T20:00:00.000Z"
+    },
+    {
+      "id": 1234,
+      "brand": "CHAMPION",
+      "name": "asdsad",
+      "price": 123,
+      "quantity": 2,
+      "date": "2025-01-14T20:00:00.000Z"
+    },
+    {
+      "id": 212,
+      "brand": "ACDELCO",
+      "name": "dd12d",
+      "price": 22,
+      "quantity": 2,
+      "date": "2025-01-06T20:00:00.000Z"
     }
   ],
-
   "adminArray": [
     {
       "name": "admin",
