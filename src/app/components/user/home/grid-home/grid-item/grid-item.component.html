@@ -1,5 +1,11 @@
 
 <div class="main">
-    <p>afajsdasdasd</p>
-    <p>asd</p>
+    <p>{{ data.filterArr[0].brand }}</p>
+    <ul>
+        @for(item of data.filterArr; track item){
+            <li>
+                <p>{{item.name}} </p>
+            </li>
+        }
+    </ul>
 </div>
