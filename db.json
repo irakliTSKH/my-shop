@@ -71,6 +71,14 @@
       "price": 22,
       "quantity": 2,
       "date": "2025-01-06T20:00:00.000Z"
+    },
+    {
+      "id": 1341,
+      "brand": "Acdelco",
+      "name": "fasf231",
+      "price": 12,
+      "quantity": 4,
+      "date": "2025-02-10T20:00:00.000Z"
     }
   ],
   "adminArray": [
