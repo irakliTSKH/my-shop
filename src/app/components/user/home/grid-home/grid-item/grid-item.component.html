@@ -1,5 +1,11 @@
 
 <div class="main">
-    <h2 mat-dialog-title>{{ data.title }}</h2>
-
+    <p>{{ data.filterArr[0].brand }}</p>
+    <ul>
+        @for(item of data.filterArr; track item){
+            <li>
+                <p>{{item.name}} </p>
+            </li>
+        }
+    </ul>
 </div>

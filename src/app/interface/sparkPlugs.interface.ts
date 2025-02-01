@@ -4,5 +4,6 @@ export interface ISparkPlug {
     name: string,
     price: number,
     quantity: number,
-    date: string
+    date: string,
+    img?: string
 }

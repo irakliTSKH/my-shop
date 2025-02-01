@@ -1,5 +1,6 @@
 import { Component, Inject } from '@angular/core';
 import { MAT_DIALOG_DATA } from '@angular/material/dialog';
+import { ISparkPlug } from '../../../../../interface/sparkPlugs.interface';
 @Component({
   selector: 'app-grid-item',
   standalone: true,
@@ -10,7 +11,7 @@ import { MAT_DIALOG_DATA } from '@angular/material/dialog';
 export class GridItemComponent  {
 
   constructor(
-    @Inject(MAT_DIALOG_DATA) public data: { title: string; content: string }
+    @Inject(MAT_DIALOG_DATA) public data: {filterArr : ISparkPlug[]}
   ){}
 
 
