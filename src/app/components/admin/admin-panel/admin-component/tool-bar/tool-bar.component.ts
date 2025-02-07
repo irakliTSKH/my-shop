@@ -16,8 +16,8 @@ export class ToolBarComponent {
 
   openAddEditForm() {
     this.dialog.open(AddItemComponent, {
-      height: '600px',
-      width: '600px',
+      height: '500px',
+      width: '500px',
     });
   }
 }

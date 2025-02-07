@@ -5,80 +5,98 @@
       "brand": "NGK",
       "name": "LKR7AIX",
       "price": 35,
-      "quantity": 1,
-      "date": "2024-11-28T20:00:00.000Z"
+      "quantity": 1
     },
     {
       "id": "1231",
       "brand": "NGK",
       "name": "LFR6CGP",
       "price": 35,
-      "quantity": 1,
-      "date": "2024-11-28T20:00:00.000Z"
+      "quantity": 1
     },
     {
       "id": "312",
       "brand": "NGK",
       "name": "BKR6",
       "price": 35,
-      "quantity": 1,
-      "date": "2024-11-28T20:00:00.000Z"
+      "quantity": 1
     },
     {
       "id": "5123",
       "brand": "DENSO",
       "name": "IK20",
       "price": 32,
-      "quantity": 5,
-      "date": "2024-11-28T20:00:00.000Z"
+      "quantity": 5
     },
     {
       "id": "5123",
       "brand": "MOTORCRAFT",
       "name": "SP530",
       "price": 51,
-      "quantity": 31,
-      "date": "2024-11-26T20:00:00.000Z"
+      "quantity": 31
     },
     {
       "id": "5123",
       "brand": "DENSO",
       "name": "sk20br",
       "price": 32,
-      "quantity": 4,
-      "date": "2025-01-01T20:00:00.000Z"
+      "quantity": 4
     },
     {
       "id": "4131",
       "brand": "DENSO",
       "name": "dex123",
       "price": 12,
-      "quantity": 4,
-      "date": "2025-01-13T20:00:00.000Z"
+      "quantity": 4
     },
     {
       "id": 1234,
       "brand": "CHAMPION",
       "name": "asdsad",
       "price": 123,
-      "quantity": 2,
-      "date": "2025-01-14T20:00:00.000Z"
+      "quantity": 2
     },
     {
       "id": 212,
       "brand": "ACDELCO",
       "name": "dd12d",
       "price": 22,
-      "quantity": 2,
-      "date": "2025-01-06T20:00:00.000Z"
+      "quantity": 2
     },
     {
       "id": 1341,
       "brand": "Acdelco",
       "name": "fasf231",
       "price": 12,
-      "quantity": 4,
-      "date": "2025-02-10T20:00:00.000Z"
+      "quantity": 4
+    },
+    {
+      "id": "22222222222222",
+      "brand": "Denso",
+      "name": "222222222222222222",
+      "price": 222222222222,
+      "quantity": 22222222222222
+    },
+    {
+      "id": "312312312",
+      "brand": "DENSO",
+      "name": "112312312312",
+      "price": 3123123,
+      "quantity": 12312
+    },
+    {
+      "id": "3123",
+      "brand": "ACDELCO",
+      "name": "1231",
+      "price": 123123,
+      "quantity": ""
+    },
+    {
+      "id": "12312312",
+      "brand": "ACDELCO",
+      "name": "q23",
+      "price": 3123123,
+      "quantity": 123123123
     }
   ],
   "adminArray": [
