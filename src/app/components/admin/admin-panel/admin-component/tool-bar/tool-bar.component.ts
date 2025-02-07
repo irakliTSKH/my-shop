@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { MatToolbarModule } from '@angular/material/toolbar';
-import { AddItemComponent } from './add-item/add-item/add-item.component';
 import {MatButtonModule} from '@angular/material/button';
+import { AddItemComponent } from './add-item/add-item/add-item.component';
 
 @Component({
   selector: 'app-tool-bar',
@@ -16,8 +16,8 @@ export class ToolBarComponent {
 
   openAddEditForm() {
     this.dialog.open(AddItemComponent, {
-      height: '600px',
-      width: '600px',
+      height: '500px',
+      width: '500px',
     });
   }
 }
