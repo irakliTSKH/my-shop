@@ -1,11 +1,5 @@
 import { Component, OnDestroy } from '@angular/core';
-import { MatFormFieldModule } from '@angular/material/form-field';
-import { MatInputModule } from '@angular/material/input';
-import { MatDatepickerModule } from '@angular/material/datepicker';
-import { MatNativeDateModule  } from '@angular/material/core';
-import { MatSelectModule } from '@angular/material/select';
 import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
-import {MatButtonModule} from '@angular/material/button';
 import { DialogRef } from '@angular/cdk/dialog';
 import { Subject, takeUntil } from 'rxjs';
 import { AddItemService } from '../../../../../../../services/add-item.service';
@@ -15,13 +9,7 @@ import { ISparkPlug } from '../../../../../../../interface/sparkPlugs.interface'
   selector: 'app-add-item',
   standalone: true,
   imports: [
-    MatFormFieldModule,
-    MatInputModule,
-    MatDatepickerModule,
-    MatNativeDateModule, 
-    MatSelectModule,
     ReactiveFormsModule,
-    MatButtonModule,
   ],
   templateUrl: './add-item.component.html',
   styleUrls: ['./add-item.component.scss'],

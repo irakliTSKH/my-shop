@@ -1,8 +1,8 @@
-import { Component } from '@angular/core';
+
+import { Component, effect } from '@angular/core';
 import { SparkPlugsService } from '../../../services/spark-plugs.service';
 import { ISparkPlug } from '../../../interface/sparkPlugs.interface';
 import { CommonModule } from '@angular/common';
-import { Subject, takeUntil } from 'rxjs';
 import { ProductItemComponent } from "./product-item/product-item.component";
 import { FormsModule } from '@angular/forms';
 
@@ -14,44 +14,28 @@ import { FormsModule } from '@angular/forms';
   styleUrl: './products.component.scss'
 })
 export class ProductsComponent {
-  constructor(private sparkPlugsService: SparkPlugsService){ }
-
-  sparkPlugsArray! : ISparkPlug[]
-  filterArray!: ISparkPlug[]
-  searchKeyword!: string
-  private destroy$ = new Subject<void>();
-
-  ngOnInit(): void {
-    this.getSparkPlugs()
-  }
+  constructor(private sparkPlugsService: SparkPlugsService){
+    effect(() => {
+      this.filterArray = [...this.sparkPlugsArray];
+    });
+   }
   
-  getSparkPlugs(){
-    this.sparkPlugsService
-    .getDataService()
-    .pipe(takeUntil(this.destroy$))
-    .subscribe({
-      next: (Response: ISparkPlug[]) => {
-        this.sparkPlugsService.setSparkPlugsData(Response);
-        this.sparkPlugsArray = this.sparkPlugsService.getSparkPlugsData();
-        this.filterArray = [...this.sparkPlugsArray];
-      }
-    })
+  filterArray: ISparkPlug[] = []
+  searchKeyword = ''
+ 
+  get sparkPlugsArray() {
+    return this.sparkPlugsService.sparkPlugsData();
   }
 
     search() {
-      if (!this.searchKeyword) {
+      if (!this.searchKeyword.trim()) {
         this.filterArray = [...this.sparkPlugsArray]; 
         return;
       }
-      const keyword = this.searchKeyword.toLowerCase();
-    
       this.filterArray = this.sparkPlugsArray.filter(item =>
-        item.name.toLowerCase().toString().includes(keyword) || item.id.toString().toLowerCase().includes(keyword)
+        item.name.toLowerCase().toString()
+        .includes(this.searchKeyword.toLocaleLowerCase()) 
+        || item.id.toString().toLowerCase().includes(this.searchKeyword.toLocaleLowerCase())
       );
-  }
-  
-  ngOnDestroy(): void {
-    this.destroy$.next();
-    this.destroy$.complete();
   }
 }

@@ -1,11 +1,12 @@
 <div class="table">
     <div class="search">
-        <input type="text" [(ngModel)]="searchKeyword" placeholder="search" (keyup)="search()">
+        <input type="text" [(ngModel)]="searchKeyword" placeholder="Search" (keyup)="search()">
     </div>
     <div class="product-container">
-        @for(item of filterArray; track item){
+        @for (item of filterArray; track item) {
             <app-product-item [spDescribe]="item" />
         }
     </div>
 </div>
+
 
