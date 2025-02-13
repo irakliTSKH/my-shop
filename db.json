@@ -1,98 +1,18 @@
 {
   "sparkPlugsData": [
     {
-      "id": "4444",
-      "brand": "NGK",
-      "name": "LKR7AIX",
-      "price": 35,
-      "quantity": 1,
-      "date": "2024-11-28T20:00:00.000Z"
-    },
-    {
-      "id": "1231",
-      "brand": "NGK",
-      "name": "LFR6CGP",
-      "price": 35,
-      "quantity": 1,
-      "date": "2024-11-28T20:00:00.000Z"
-    },
-    {
-      "id": "312",
-      "brand": "NGK",
-      "name": "BKR6",
-      "price": 35,
-      "quantity": 1,
-      "date": "2024-11-28T20:00:00.000Z"
-    },
-    {
-      "id": "5123",
-      "brand": "DENSO",
-      "name": "IK20",
-      "price": 32,
-      "quantity": 5,
-      "date": "2024-11-28T20:00:00.000Z"
-    },
-    {
-      "id": "5123",
-      "brand": "MOTORCRAFT",
-      "name": "SP530",
-      "price": 51,
-      "quantity": 31,
-      "date": "2024-11-26T20:00:00.000Z"
-    },
-    {
-      "id": "5123",
-      "brand": "DENSO",
-      "name": "sk20br",
-      "price": 32,
-      "quantity": 4,
-      "date": "2025-01-01T20:00:00.000Z"
-    },
-    {
-      "id": "4131",
-      "brand": "DENSO",
-      "name": "dex123",
-      "price": 12,
-      "quantity": 4,
-      "date": "2025-01-13T20:00:00.000Z"
-    },
-    {
       "id": "1234",
-      "brand": "CHAMPION",
-      "name": "asdsad",
-      "price": 123,
-      "quantity": 2,
-      "date": "2025-01-14T20:00:00.000Z"
-    },
-    {
-      "id": "212",
-      "brand": "ACDELCO",
-      "name": "dd12d",
-      "price": 22,
-      "quantity": 2,
-      "date": "2025-01-06T20:00:00.000Z"
-    },
-    {
-      "id": "1341",
-      "brand": "Acdelco",
-      "name": "fasf231",
-      "price": 12,
-      "quantity": 4,
-      "date": "2025-02-10T20:00:00.000Z"
-    },
-    {
-      "id": "123123123",
       "brand": "NGK",
-      "name": "123",
-      "price": 112123,
-      "quantity": 1211123
+      "name": "lkr7aix",
+      "price": 35,
+      "quantity": 4
     },
     {
-      "id": "rrrrr",
-      "brand": "MOTORCRAFT",
-      "name": "rrrrrr",
-      "price": 3333333333,
-      "quantity": 33333333333
+      "id": "4123",
+      "brand": "NGK",
+      "name": "ik20",
+      "price": 30,
+      "quantity": 4
     }
   ],
   "adminArray": [
