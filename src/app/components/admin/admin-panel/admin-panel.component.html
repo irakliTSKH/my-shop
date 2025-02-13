@@ -1,4 +1,4 @@
-<!-- @if(!admin){
+@if(!admin){
     <form class="admin-login" [formGroup]='myForm'  (ngSubmit)="onSubmit()"  >
         <label for="name">Name</label>
         <input type="text" id="name" formControlName="name">
@@ -16,6 +16,4 @@
     <div class="admin-panel">
        <app-admin-component />
     </div>
-} -->
-
-<app-admin-component />
+}

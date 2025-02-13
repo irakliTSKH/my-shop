@@ -29,14 +29,40 @@
 }
 
 .banner{
-    background-color: $color-third;
+    background-color: $color-primary;
     height: 40vh;
     width: 95%;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: auto;
-    img{
+    text-wrap: nowrap;
+    position: relative;
+    transition: background-color 0.3s ease-in-out;
+    &:hover{
+        background-color: #cfcfcf;
+    }
+
+    a{
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
         height: 100%;
     }
+
+    h4{
+        font-size: 100px;
+        color: #fff;
+        font-style: italic;
+        letter-spacing: 20px;
+    }
+    span{
+        font-size: 150px;
+        font-style: italic;
+        color: $color-third;
+    }
+  
 }

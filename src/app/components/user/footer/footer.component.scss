@@ -2,14 +2,23 @@
 
 .main{
     background-color: $color-primary;
+    color: #fff;
     padding: 20px;
-    .contact{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        color: $color-secondary;
-        h3, p {
-            margin: 5px;
-        }
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+        .icon{
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                a{
+                    &:hover{
+                        color: #f3f3f3;
+                    }
+                }
+            img{
+                height: 20px;
+            }
     }
 }
