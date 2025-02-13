@@ -1,23 +1,28 @@
 @import '../../../share/variables';
 
-table {
-    font-family: arial, sans-serif;
-    border-collapse: collapse;
-    width: 80%;
-  }
-  
-  td, th {
-    border: 1px solid $color-primary;
-    text-align: left;
-    padding: 8px;
-  }
-  
-  tr:nth-child(even) {
-    background-color: $color-primary;
-  }
+.table {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+  width: 100%;
+  position: relative;
+}
 
-  .table{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.product-container {
+  height: 70vh;
+  overflow: auto;
+}
+
+.search{
+  position:fixed;
+  left: 50px;
+  top: 200px;
+  input{
+    border-radius: 10px;
+    padding: 10px;
+    width: 160px;
   }
+}
+
+

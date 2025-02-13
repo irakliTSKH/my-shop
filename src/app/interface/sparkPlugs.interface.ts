@@ -1,9 +1,8 @@
 export interface ISparkPlug {
     brand:string,
-    id: number,
+    id: string,
     name: string,
-    price: number,
+    price?: number,
     quantity: number,
-    date: string,
     img?: string
 }

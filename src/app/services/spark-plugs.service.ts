@@ -8,11 +8,13 @@ import { ISparkPlug } from '../interface/sparkPlugs.interface';
 })
 export class SparkPlugsService {
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient) {
+    this.loadSparkPlugs();
+  }
 
-  private sparkPlugsDataSignal  = signal<ISparkPlug[]>([]);
+  private sparkPlugsDataSignal = signal<ISparkPlug[]>([]);
 
-  get getSparkPlugsData() {
+  get sparkPlugsData() {
     return this.sparkPlugsDataSignal;
   }
 
@@ -20,8 +22,14 @@ export class SparkPlugsService {
     this.sparkPlugsDataSignal.set(data);
   }
 
-  getDataService(): Observable<ISparkPlug[]>{
-    return this.http.get<ISparkPlug[]>('http://localhost:3000/sparkPlugsData')
+  private loadSparkPlugs() {
+    this.getDataService().subscribe({
+      next: (data) => this.setSparkPlugsData(data),
+      error: (err) => console.error('Failed to fetch spark plugs data', err),
+    });
+  }
+
+  private getDataService(): Observable<ISparkPlug[]> {
+    return this.http.get<ISparkPlug[]>('http://localhost:3000/sparkPlugsData');
   }
 }
- 

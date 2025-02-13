@@ -1,86 +1,72 @@
 {
   "sparkPlugsData": [
     {
-      "id": "4444",
+      "id": "1412",
       "brand": "NGK",
-      "name": "LKR7AIX",
+      "name": "bkr6eix",
       "price": 35,
-      "quantity": 1,
-      "date": "2024-11-28T20:00:00.000Z"
+      "quantity": 4
     },
     {
-      "id": "1231",
+      "id": "1412",
       "brand": "NGK",
-      "name": "LFR6CGP",
+      "name": "lkr7aix",
       "price": 35,
-      "quantity": 1,
-      "date": "2024-11-28T20:00:00.000Z"
+      "quantity": 4
     },
     {
-      "id": "312",
-      "brand": "NGK",
-      "name": "BKR6",
-      "price": 35,
-      "quantity": 1,
-      "date": "2024-11-28T20:00:00.000Z"
-    },
-    {
-      "id": "5123",
+      "id": "4121",
       "brand": "DENSO",
-      "name": "IK20",
-      "price": 32,
-      "quantity": 5,
-      "date": "2024-11-28T20:00:00.000Z"
+      "name": "ik20",
+      "price": 30,
+      "quantity": 4
     },
     {
-      "id": "5123",
+      "id": "8182",
+      "brand": "BOSCH",
+      "name": "gzdaf",
+      "price": 25,
+      "quantity": 8
+    },
+    {
+      "id": "5152",
       "brand": "MOTORCRAFT",
-      "name": "SP530",
-      "price": 51,
-      "quantity": 31,
-      "date": "2024-11-26T20:00:00.000Z"
+      "name": "sp530",
+      "price": 35,
+      "quantity": 12
     },
     {
-      "id": "5123",
-      "brand": "DENSO",
-      "name": "sk20br",
-      "price": 32,
-      "quantity": 4,
-      "date": "2025-01-01T20:00:00.000Z"
-    },
-    {
-      "id": "4131",
-      "brand": "DENSO",
-      "name": "dex123",
-      "price": 12,
-      "quantity": 4,
-      "date": "2025-01-13T20:00:00.000Z"
-    },
-    {
-      "id": 1234,
-      "brand": "CHAMPION",
-      "name": "asdsad",
-      "price": 123,
-      "quantity": 2,
-      "date": "2025-01-14T20:00:00.000Z"
-    },
-    {
-      "id": 212,
+      "id": "41121",
       "brand": "ACDELCO",
-      "name": "dd12d",
-      "price": 22,
-      "quantity": 2,
-      "date": "2025-01-06T20:00:00.000Z"
+      "name": "fqwe",
+      "price": 35,
+      "quantity": 8
+    },
+    {
+      "id": "5512",
+      "brand": "CHAMPION",
+      "name": "fasd",
+      "price": 20,
+      "quantity": 20
+    },
+    {
+      "id": "5124",
+      "brand": "MOTORCRAFT",
+      "name": "sp520",
+      "price": 35,
+      "quantity": 12
     }
   ],
   "adminArray": [
     {
       "name": "admin",
-      "password": "admin1"
+      "password": "admin1",
+      "id": "44fd"
     },
     {
       "name": "admin2",
-      "password": "admin2"
+      "password": "admin2",
+      "id": "b34d"
     }
   ]
 }

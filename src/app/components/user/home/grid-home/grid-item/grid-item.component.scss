@@ -1,6 +1,35 @@
+@import '../../../../../share/variables';
+
 .main{
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  padding: 20px;
+  text-align: center;
+}
+
+table {
+  width: 80%;
+  border-collapse: collapse;
+  margin: auto;
+  margin-top: 10px;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+thead {
+  background-color: #f4f4f4;
+}
+
+tbody {
+  display: block;
+  height:  300px;
+  overflow-y: auto;
+}
+
+thead, tbody tr {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
 }

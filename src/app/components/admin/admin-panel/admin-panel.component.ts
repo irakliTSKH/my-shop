@@ -1,15 +1,14 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
-import { ToolBarComponent } from "./tool-bar/tool-bar.component";
-import { DataTableComponent } from "./data-table/data-table.component";
 import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { AdminService } from '../../../services/admin.service';
 import { IAdmin } from '../../../interface/admin.interface';
 import { Subject, takeUntil } from 'rxjs';
+import { AdminComponentComponent } from "./admin-component/admin-component.component";
 
 @Component({
   selector: 'app-admin-panel',
   standalone: true,
-  imports: [ToolBarComponent, DataTableComponent, ReactiveFormsModule ],
+  imports: [ ReactiveFormsModule, AdminComponentComponent],
   templateUrl: './admin-panel.component.html',
   styleUrl: './admin-panel.component.scss'
 })

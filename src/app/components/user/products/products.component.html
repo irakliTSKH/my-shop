@@ -1,23 +1,12 @@
 <div class="table">
-    <table>
-        <tr>
-          <th>Brand</th>
-          <th>Name</th>
-          <th>Id</th>
-          <th>Price</th>
-          <th>Quantity</th>
-          <th>Date</th>
-        </tr>
-         @for(item of data; track item){
-            <tr>
-                <td>{{item.brand}}</td>
-                <td>{{item.name}}</td>
-                <td>{{item.id}}</td>
-                <td>{{item.price}}</td>
-                <td>{{item.quantity}}</td>
-                <td>{{item.date | date }}</td>
-            </tr>
-         }
-    </table>
+    <div class="search">
+        <input type="text" [(ngModel)]="searchKeyword" placeholder="Search" (keyup)="search()">
+    </div>
+    <div class="product-container">
+        @for (item of filterArray; track item) {
+            <app-product-item [spDescribe]="item" />
+        }
+    </div>
 </div>
+
 

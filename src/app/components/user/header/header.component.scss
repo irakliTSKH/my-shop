@@ -14,6 +14,8 @@
         }
     }
     .links{
+        display: flex;
+        align-items: center;
         ul {
             display: flex;
               gap: 50px;

@@ -1,0 +1,30 @@
+@import '../../../../../../../../app/share/variables';
+
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    form{
+        display: flex;
+        flex-direction: column;
+        label{
+            margin-bottom: 5px;
+            text-align: center;
+        }
+        input, select{
+            margin-bottom: 20px;
+            padding: 5px;
+        }
+    }
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    button{
+        width: 80px;
+        padding: 5px;
+        background-color: $color-primary;
+    }    
+}

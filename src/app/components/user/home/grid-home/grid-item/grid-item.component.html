@@ -1,11 +1,23 @@
 
 <div class="main">
-    <p>{{ data.filterArr[0].brand }}</p>
-    <ul>
-        @for(item of data.filterArr; track item){
-            <li>
-                <p>{{item.name}} </p>
-            </li>
+    <h2>{{ data.filterArr[0].brand }}</h2>
+
+    <table>
+        <thead>
+        <tr>
+          <th>ID</th>
+          <th>კოდი</th>
+          <th>რაოდენობა</th>
+        </tr>
+    </thead>
+    <tbody>
+         @for(item of data.filterArr; track item){
+            <tr>
+                <td>{{item.id}}</td>
+                <td>{{item.name.toUpperCase()}}</td>
+                <td>{{item.quantity}}</td>
+            </tr>
         }
-    </ul>
+    </tbody>
+    </table>
 </div>
