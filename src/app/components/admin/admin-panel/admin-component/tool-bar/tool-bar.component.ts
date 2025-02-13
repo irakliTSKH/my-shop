@@ -1,13 +1,12 @@
 import { Component } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
-import { MatToolbarModule } from '@angular/material/toolbar';
-import {MatButtonModule} from '@angular/material/button';
 import { AddItemComponent } from './add-item/add-item/add-item.component';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-tool-bar',
   standalone: true,
-  imports: [MatToolbarModule, MatButtonModule],
+  imports: [RouterModule],
   templateUrl: './tool-bar.component.html',
   styleUrl: './tool-bar.component.scss',
 })

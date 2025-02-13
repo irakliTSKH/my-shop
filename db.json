@@ -1,18 +1,60 @@
 {
   "sparkPlugsData": [
     {
-      "id": "1234",
+      "id": "1412",
+      "brand": "NGK",
+      "name": "bkr6eix",
+      "price": 35,
+      "quantity": 4
+    },
+    {
+      "id": "1412",
       "brand": "NGK",
       "name": "lkr7aix",
       "price": 35,
       "quantity": 4
     },
     {
-      "id": "4123",
-      "brand": "NGK",
+      "id": "4121",
+      "brand": "DENSO",
       "name": "ik20",
       "price": 30,
       "quantity": 4
+    },
+    {
+      "id": "8182",
+      "brand": "BOSCH",
+      "name": "gzdaf",
+      "price": 25,
+      "quantity": 8
+    },
+    {
+      "id": "5152",
+      "brand": "MOTORCRAFT",
+      "name": "sp530",
+      "price": 35,
+      "quantity": 12
+    },
+    {
+      "id": "41121",
+      "brand": "ACDELCO",
+      "name": "fqwe",
+      "price": 35,
+      "quantity": 8
+    },
+    {
+      "id": "5512",
+      "brand": "CHAMPION",
+      "name": "fasd",
+      "price": 20,
+      "quantity": 20
+    },
+    {
+      "id": "5124",
+      "brand": "MOTORCRAFT",
+      "name": "sp520",
+      "price": 35,
+      "quantity": 12
     }
   ],
   "adminArray": [
