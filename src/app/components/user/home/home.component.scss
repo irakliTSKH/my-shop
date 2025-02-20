@@ -40,7 +40,7 @@
     position: relative;
     animation: animationColor 3s infinite;
     &:hover{
-       animation: animationColorHover 0.5s infinite;
+       animation: animationColor 0.5s infinite;
     }
 
     a{
@@ -64,10 +64,7 @@
         font-style: italic;
         color: $color-third;
     }
-  
 }
-
-
 
 @keyframes animationColor {
     0% {
@@ -87,21 +84,3 @@
     }
   }
 
-  
-@keyframes animationColorHover {
-    0% {
-      background-color: rgb(255, 255, 255);
-    };
-    25% {
-        background-color: rgb(219, 218, 218);
-      };
-    50% {
-        background-color: $color-primary;
-      };
-    75% {
-        background-color: rgb(219, 218, 218);
-      };
-    100% {
-        background-color: rgb(255, 255, 255);
-    }
-  }
