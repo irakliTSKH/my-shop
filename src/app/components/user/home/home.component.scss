@@ -38,9 +38,9 @@
     margin: auto;
     text-wrap: nowrap;
     position: relative;
-    transition: background-color 0.3s ease-in-out;
+    animation: animationColor 3s infinite;
     &:hover{
-        background-color: #cfcfcf;
+       animation: animationColorHover 0.5s infinite;
     }
 
     a{
@@ -66,3 +66,42 @@
     }
   
 }
+
+
+
+@keyframes animationColor {
+    0% {
+      background-color: rgb(255, 255, 255);
+    };
+    25% {
+        background-color: rgb(219, 218, 218);
+      };
+    50% {
+        background-color: $color-primary;
+      };
+    75% {
+        background-color: rgb(219, 218, 218);
+      };
+    100% {
+        background-color: rgb(255, 255, 255);
+    }
+  }
+
+  
+@keyframes animationColorHover {
+    0% {
+      background-color: rgb(255, 255, 255);
+    };
+    25% {
+        background-color: rgb(219, 218, 218);
+      };
+    50% {
+        background-color: $color-primary;
+      };
+    75% {
+        background-color: rgb(219, 218, 218);
+      };
+    100% {
+        background-color: rgb(255, 255, 255);
+    }
+  }
