@@ -55,6 +55,27 @@
       "name": "sp520",
       "price": 35,
       "quantity": 12
+    },
+    {
+      "id": "5123",
+      "brand": "CHAMPION",
+      "name": "fqdas12",
+      "price": 22,
+      "quantity": 5
+    },
+    {
+      "id": "5122",
+      "brand": "NGK",
+      "name": "bkr7e",
+      "price": 33,
+      "quantity": 6
+    },
+    {
+      "id": "asdasd",
+      "brand": "MOTORCRAFT",
+      "name": "asd",
+      "price": 123,
+      "quantity": 123
     }
   ],
   "adminArray": [
